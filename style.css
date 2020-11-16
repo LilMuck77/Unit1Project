@@ -1,0 +1,45 @@
+body {
+    padding: 25px;
+}
+
+.tab-pane {
+    padding: 10px;
+}
+#home {
+    background-color: lightgreen;
+}
+
+#deliver {
+    background-color: tomato;
+
+}
+
+#contact {
+    background-color: mediumseagreen;
+    color: aliceblue;
+}
+.nav-link{
+    color: deepskyblue;
+}
+#finalMessage{
+    margin-left: 40px;
+}
+form{
+    color: white;
+}
+#tabs{
+    color: white;
+}
+legend{
+    color: #ff0021;
+}
+h1{
+color: #ff740a}
+h2{
+    color: #ffb91f}
+h5{
+    color: #ffb91f;
+}
+h4{
+    color: #ff7500
+}

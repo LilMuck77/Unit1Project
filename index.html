@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to PizZaihs</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+
+
+</head>
+
+<body>
+<style>
+    body {
+        background-image: url("https://cdn.hipwallpaper.com/i/28/66/KPwTxB.jpg");
+
+        background-size: 150%;
+    }
+</style>
+
+<form>
+    <div class="container">
+        <h1>Welcome to PizZaih's</h1>
+        <nav>
+            <ul id="tabs" class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#pizzaDetails">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#customerInfo">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#orderConfirmation">Confirmation</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="tab-content">
+            <div id="pizzaDetails" class="tab-pane active">
+                <header>
+                    <h2>Pizza Details</h2>
+                    <p>Please select the details you want for your pizza.</p>
+                </header>
+                <form id="tabOne">
+                    <fieldset class="pizzaOptions" id="pizzaSizes">
+                        <legend class="legend">Size Choices</legend>
+                        <table class="sizeTable">
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="size" id="jumboSliceSize" data-size-price="3"
+                                               value="Jumbo Slice" checked="checked">
+                                        "Jumbo Slice = $3"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="size" id="smallSize" data-size-price="7"
+                                               value="Small">
+                                        "Small pizza = $7"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="size" id="mediumSize" data-size-price="9"
+                                               value="Medium">
+                                        "Medium pizza = $9"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="size" id="largeSize" data-size-price="12"
+                                               value="Large">
+                                        "Large pizza = $12"
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset class="pizzaOptions" id="pizzaCrusts">
+                        <legend class="legend">Crust Choices</legend>
+                        <table class="crustTable">
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="crust" id="thinCrust" value="Thin Crust" checked>
+                                        "Thin Crust"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="crust" id="handTossedCrust" value="Hand Tossed Crust">
+                                        "Hand Tossed Crust"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="crust" id="glutenFreeCrust" value="Gluten Free Crust">
+                                        "Gluten Free Crust"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="crust" id="cheeseFilledCrust"
+                                               value="Cheese Filled Crust">
+                                        "Cheese Filled Crust"
+                                    </label>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset class="pizzaOptions" id="pizzaToppings">
+                        <legend class="legend">Topping Choices - $1.00 Each</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="mushroomTopping" value="Mushrooms"
+                                               data-toppings-price="1">
+                                        "Mushrooms"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="onionTopping" value="Onions"
+                                               data-toppings-price="1">
+                                        "Onions"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="greenPepperTopping"
+                                               value="Green Peppers"
+                                               data-toppings-price="1">
+                                        "Green Peppers"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="pineappleTopping" value="Pineapple"
+                                               data-toppings-price="1">
+                                        "Pineapple"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="spinachTopping" value="Spinach"
+                                               data-toppings-price="1">
+                                        "Spinach"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="toppings" id="jalapenoPeppersTopping"
+                                               value="Jalapeno Peppers" data-toppings-price="1">
+                                        "Jalapeno Peppers"
+                                    </label>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset class="pizzaOptions" id="pizzaMeats">
+                        <legend class="legend">Meat Choices - $1.50 Each</legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="sausage" value="Sausage"
+                                               data-meats-price="1.5">
+                                        "Sausage"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="pepperoni" value="Pepperoni"
+                                               data-meats-price="1.5">
+                                        "Pepperoni"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="bacon" value="Bacon"
+                                               data-meats-price="1.5">
+                                        "Bacon"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="chicken" value="Chicken"
+                                               data-meats-price="1.5">
+                                        "Chicken"
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="steak" value="Steak"
+                                               data-meats-price="1.5">
+                                        "Steak"
+                                    </label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="meats" id="salami" value="Salami"
+                                               data-meats-price="1.5">
+                                        "Salami"
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="customerInfo" class="tab-pane">
+                <form id="tabTwo">
+                    <header>
+                        <h2>Customer Information</h2>
+                        <p>Enter your information for delivery.</p>
+                    </header>
+                    <fieldset class="fieldset" id="contractInfo">
+                        <legend class="legend">Contact Information</legend>
+                        <table class="contactTable">
+                            <tr>
+                                <td>
+                                    "First Name"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="contact" id="firstName" required>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    "Last Name"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="contact" id="lastName" required>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    "Phone Number"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="contact" id="phoneNumber" maxlength="10" required>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset class="fieldset" id="addressInfo">
+                        <legend class="legend">Address Information</legend>
+                        <table class="addressTable">
+                            <tr>
+                                <td>
+                                    "Street Address"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="address" id="street" required>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    "City"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="address" id="city" required>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    "State"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="address" id="state" required>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    "Zip Code"
+                                    <span class="required"></span>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="text" name="address" id="zipCode" size="5" maxlength="5" required>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="orderConfirmation" class="tab-pane">
+                <h2>Order Confirmation</h2>
+                <fieldset class="fieldset" id="pizzaSummary">
+                    <legend class="legend">Pizza Details Summary</legend>
+                    <h5>
+                        Size:
+                    </h5>
+                    <span id="outputPizzaSize"></span>
+                    <br>
+                    <h5>
+                        Crust:
+                    </h5>
+                    <span id="outputPizzaCrust"></span>
+                    <br>
+                    <h5>
+                        Toppings:
+                    </h5>
+                    <span id="outputToppings"></span>
+                    <br>
+                    <h5>
+                        Meats:
+                    </h5>
+                    <span id="outputMeats"></span>
+                </fieldset>
+                <br>
+                <fieldset class="fieldset" id="contactSummary">
+                    <legend class="legend">Contact Information Summary</legend>
+                    <h5>
+                        Name:
+                    </h5>
+                    <span id="outputName"></span>
+                    <br>
+                    <h5>
+                        Street:
+                    </h5>
+                    <span id="outputStreet"></span>
+                    <br>
+                    <h5>
+                        City:
+                    </h5>
+                    <span id="outputCity"></span>
+                    <br>
+                    <h5>
+                        Phone:
+                    </h5>
+                    <span id="outputPhone"></span>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset class="fieldset" id="costSummary">
+                    <legend class="legend">Cost Details Summary</legend>
+                    <h5>
+                        Subtotal:
+                        <span id="outputSubtotal"></span>
+                    </h5>
+                    <br>
+                    <h5>
+                        Tax:
+                        <span id="outputTax"></span>
+                    </h5>
+                    <br>
+                    <h5>
+                        Delivery Fee:
+                        <span id="outputDeliveryFee"></span>
+                    </h5>
+                    <br>
+                    <h4>
+                        Grand Total:
+                        <span id="outputGrandTotal"></span>
+                    </h4>
+                    <br>
+                </fieldset>
+                <button id="orderFinal" class="btn btn-primary">Place Order</button>
+
+                <span id="finalMessage"></span>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="pizZaihs.js"></script>
+
+</body>
+
+</html>
